@@ -13,7 +13,7 @@ while (play) {
     player = window.prompt('choose from: ' + choices);
     computer = choices[Math.floor(Math.random()*choices.length)];
     game(player,computer);
-    newGame = window.confirm('do you want to play again?')
+    newGame = window.confirm('do you want to play again?');
     if (newGame != play) {
         break;
     }
