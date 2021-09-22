@@ -1,5 +1,4 @@
 
-
 var choices = ['rock', 'paper','scissors'];
 
 var computer = choices[Math.floor(Math.random()*choices.length)];
@@ -14,6 +13,7 @@ var score;
 var play = window.confirm('would you like to play rock, paper, scissors?');
 while (play) {
     player = window.prompt('choose from: ' + choices);
+    computer = choices[Math.floor(Math.random()*choices.length)];
     game(player,computer);
     newGame = window.confirm('do you want to play again?')
     if (newGame != play) {
